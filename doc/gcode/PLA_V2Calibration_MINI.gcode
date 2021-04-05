@@ -6,6 +6,10 @@ M109 S215 ;wait for nozzle temp 215C
 G28 ;autohome
 G29 ;meshbed leveling
 
+M92 
+M500
+E415
+
 G92 E0.0 ;set extruder position 0
 G21 ; set units to millimeters
 G90 ; use absolute coordinates
